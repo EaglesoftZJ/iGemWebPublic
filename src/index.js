@@ -7,7 +7,8 @@ import { ActorSDK, ActorSDKDelegate } from 'actor-sdk';
 // Main application config
 const config = {
    endpoints: [
-     'ws://61.175.100.14:9080',
+    //  'ws://220.189.207.18:9080'
+    'ws://61.175.100.14:9080',
   //   'wss://front2-ws-mtproto-api-rev2.actor.im'
    ],
   // isExperimental: true,
