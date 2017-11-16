@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>iGem</title>
+  <title>FlyChat</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="icon" id="favicon" type="image/png" href="/assets/images/favicon.png">
@@ -12,5 +12,14 @@
   <div class="splash-screen row center-xs middle-xs">
     <div class="logo"></div>
   </div>
+
+  <script>
+    document.addEventListener('drop', function (e) {
+    });
+    document.addEventListener('dragenter', function (e) {
+      window.messenger.sendToElectron('active-focus');
+    });
+    window.location.href = '/#/auth';
+  </script>
 </body>
 </html>
